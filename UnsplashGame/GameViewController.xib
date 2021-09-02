@@ -74,7 +74,7 @@
                                 <constraint firstAttribute="height" constant="80" id="7wU-Vq-YJ9"/>
                                 <constraint firstItem="p7z-ij-Gbu" firstAttribute="leading" secondItem="cZh-II-VaK" secondAttribute="trailing" constant="5" id="AEa-en-SQG"/>
                                 <constraint firstItem="p7z-ij-Gbu" firstAttribute="centerY" secondItem="cZh-II-VaK" secondAttribute="centerY" id="tr7-gE-TbK"/>
-                                <constraint firstItem="cZh-II-VaK" firstAttribute="leading" secondItem="FJ6-m4-rh5" secondAttribute="leading" constant="40" id="zoo-wW-mD1"/>
+                                <constraint firstItem="cZh-II-VaK" firstAttribute="leading" secondItem="FJ6-m4-rh5" secondAttribute="leading" constant="20" id="zoo-wW-mD1"/>
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hEd-eO-Msi">
@@ -132,20 +132,20 @@
                                         <action selector="onImageClick:" destination="-1" eventType="touchUpInside" id="fYh-FP-EIa"/>
                                     </connections>
                                 </button>
-                                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="EeT-Ge-D6h">
-                                    <rect key="frame" x="93" y="77" width="20" height="20"/>
+                                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="EeT-Ge-D6h">
+                                    <rect key="frame" x="84.5" y="68.5" width="37" height="37"/>
                                     <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </activityIndicatorView>
-                                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="hq2-Ci-qkv">
-                                    <rect key="frame" x="301" y="77" width="20" height="20"/>
+                                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="hq2-Ci-qkv">
+                                    <rect key="frame" x="292.5" y="68.5" width="37" height="37"/>
                                     <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </activityIndicatorView>
-                                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="kIh-GN-0U7">
-                                    <rect key="frame" x="93" y="271" width="20" height="20"/>
+                                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="kIh-GN-0U7">
+                                    <rect key="frame" x="84.5" y="262.5" width="37" height="37"/>
                                     <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </activityIndicatorView>
-                                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="sah-dd-NxK">
-                                    <rect key="frame" x="301" y="271" width="20" height="20"/>
+                                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="sah-dd-NxK">
+                                    <rect key="frame" x="292.5" y="262.5" width="37" height="37"/>
                                     <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </activityIndicatorView>
                             </subviews>
@@ -223,7 +223,7 @@
                         <constraint firstItem="hEd-eO-Msi" firstAttribute="leading" secondItem="avt-v5-MDh" secondAttribute="leading" id="n4u-z2-hKS"/>
                         <constraint firstItem="qL6-2C-zdO" firstAttribute="leading" secondItem="avt-v5-MDh" secondAttribute="leading" id="t4Y-XQ-3P3"/>
                         <constraint firstAttribute="bottom" secondItem="qL6-2C-zdO" secondAttribute="bottom" id="tpa-ZQ-arz"/>
-                        <constraint firstItem="hEd-eO-Msi" firstAttribute="top" secondItem="FJ6-m4-rh5" secondAttribute="bottom" constant="10" id="trf-bC-9bf"/>
+                        <constraint firstItem="hEd-eO-Msi" firstAttribute="top" secondItem="FJ6-m4-rh5" secondAttribute="bottom" id="trf-bC-9bf"/>
                         <constraint firstItem="xop-N0-4bp" firstAttribute="leading" secondItem="avt-v5-MDh" secondAttribute="leading" id="zqy-Tg-1dp"/>
                     </constraints>
                 </view>

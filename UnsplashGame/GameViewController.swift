@@ -43,7 +43,7 @@ class GameViewController: UIViewController {
     
     @IBAction func onImageClick(_ sender: UIButton) {
         let selectedImages = gameImages.filter { $0 == gameImages[sender.tag] }
-        if selectedImages.count == 1 {
+        if selectedImages.count > 0 {
             playGame()
         } else {
             gameState = .stop
