@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		DA1922A526CD2C3900AF7E59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1922A426CD2C3900AF7E59 /* AppDelegate.swift */; };
 		DA1922A726CD2C3900AF7E59 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1922A626CD2C3900AF7E59 /* SceneDelegate.swift */; };
-		DA1922A926CD2C3900AF7E59 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1922A826CD2C3900AF7E59 /* ContentView.swift */; };
 		DA1922AB26CD2C3A00AF7E59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA1922AA26CD2C3A00AF7E59 /* Assets.xcassets */; };
-		DA1922AE26CD2C3A00AF7E59 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA1922AD26CD2C3A00AF7E59 /* Preview Assets.xcassets */; };
 		DA1922B126CD2C3A00AF7E59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA1922AF26CD2C3A00AF7E59 /* LaunchScreen.storyboard */; };
+		DAC51A1E26D6621900997F45 /* UnsplashAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC51A1D26D6621900997F45 /* UnsplashAPI.swift */; };
+		DAC51A2126D6649400997F45 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC51A1F26D6649400997F45 /* GameViewController.swift */; };
+		DAC51A2226D6649400997F45 /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAC51A2026D6649400997F45 /* GameViewController.xib */; };
+		DAC51A2826D6760000997F45 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC51A2726D6760000997F45 /* GameState.swift */; };
+		DAC51A2A26D67BE700997F45 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC51A2926D67BE700997F45 /* ImageDownloader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DA1922A126CD2C3900AF7E59 /* UnsplashGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnsplashGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA1922A426CD2C3900AF7E59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA1922A626CD2C3900AF7E59 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DA1922A826CD2C3900AF7E59 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DA1922AA26CD2C3A00AF7E59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DA1922AD26CD2C3A00AF7E59 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DA1922B026CD2C3A00AF7E59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA1922B226CD2C3A00AF7E59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAC51A1D26D6621900997F45 /* UnsplashAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashAPI.swift; sourceTree = "<group>"; };
+		DAC51A1F26D6649400997F45 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		DAC51A2026D6649400997F45 /* GameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameViewController.xib; sourceTree = "<group>"; };
+		DAC51A2726D6760000997F45 /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
+		DAC51A2926D67BE700997F45 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,21 +64,16 @@
 			children = (
 				DA1922A426CD2C3900AF7E59 /* AppDelegate.swift */,
 				DA1922A626CD2C3900AF7E59 /* SceneDelegate.swift */,
-				DA1922A826CD2C3900AF7E59 /* ContentView.swift */,
+				DAC51A1D26D6621900997F45 /* UnsplashAPI.swift */,
 				DA1922AA26CD2C3A00AF7E59 /* Assets.xcassets */,
 				DA1922AF26CD2C3A00AF7E59 /* LaunchScreen.storyboard */,
 				DA1922B226CD2C3A00AF7E59 /* Info.plist */,
-				DA1922AC26CD2C3A00AF7E59 /* Preview Content */,
+				DAC51A1F26D6649400997F45 /* GameViewController.swift */,
+				DAC51A2026D6649400997F45 /* GameViewController.xib */,
+				DAC51A2726D6760000997F45 /* GameState.swift */,
+				DAC51A2926D67BE700997F45 /* ImageDownloader.swift */,
 			);
 			path = UnsplashGame;
-			sourceTree = "<group>";
-		};
-		DA1922AC26CD2C3A00AF7E59 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				DA1922AD26CD2C3A00AF7E59 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,8 +134,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA1922B126CD2C3A00AF7E59 /* LaunchScreen.storyboard in Resources */,
-				DA1922AE26CD2C3A00AF7E59 /* Preview Assets.xcassets in Resources */,
 				DA1922AB26CD2C3A00AF7E59 /* Assets.xcassets in Resources */,
+				DAC51A2226D6649400997F45 /* GameViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,9 +146,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAC51A2826D6760000997F45 /* GameState.swift in Sources */,
+				DAC51A2126D6649400997F45 /* GameViewController.swift in Sources */,
+				DAC51A2A26D67BE700997F45 /* ImageDownloader.swift in Sources */,
+				DAC51A1E26D6621900997F45 /* UnsplashAPI.swift in Sources */,
 				DA1922A526CD2C3900AF7E59 /* AppDelegate.swift in Sources */,
 				DA1922A726CD2C3900AF7E59 /* SceneDelegate.swift in Sources */,
-				DA1922A926CD2C3900AF7E59 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
