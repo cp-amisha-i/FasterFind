@@ -20,7 +20,7 @@ class GameViewController: UIViewController {
     var gameLevel = 0
     var gameImages: [UIImage] = []
     var gameTimer: AnyCancellable?
-    var cancelable: Set<AnyCancellable> = []
+    var cancellable: Set<AnyCancellable> = []
     
     var gameState: GameState = .stop {
         didSet {
@@ -62,14 +62,14 @@ class GameViewController: UIViewController {
         resetImages()
         startLoaders()
         
-        let firstImage = UnsplashAPI.randomImage()
+        let firstImage = UnsplashAPI.generateRandomImage()
             .flatMap { randomImageResponse in
-                ImageDownloader.download(url: randomImageResponse.urls.regular)
+                ImageDownloader.downloadImage(url: randomImageResponse.urls.regular)
             }
         
-        let secondImage = UnsplashAPI.randomImage()
+        let secondImage = UnsplashAPI.generateRandomImage()
             .flatMap { randomImageResponse in
-                ImageDownloader.download(url: randomImageResponse.urls.regular)
+                ImageDownloader.downloadImage(url: randomImageResponse.urls.regular)
             }
         
         firstImage.zip(secondImage)
@@ -101,11 +101,11 @@ class GameViewController: UIViewController {
                 self.stopLoaders()
                 self.setImages()
             })
-            .store(in: &cancelable)
+            .store(in: &cancellable)
     }
     
     func pauseGame() {
-        cancelable.forEach { $0.cancel() }
+        cancellable.forEach { $0.cancel() }
         gameTimer?.cancel()
         playPauseButton.setTitle("Play", for: .normal)
         gameScore = 0
@@ -124,7 +124,7 @@ class GameViewController: UIViewController {
     }
     
     func resetImages() {
-        cancelable = []
+        cancellable = []
         gameImages = []
         imageView.forEach { $0.image = nil }
     }

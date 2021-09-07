@@ -19,7 +19,7 @@ struct RandomImageResponse: Decodable {
 enum UnsplashAPI {
     static let accessToken = "JkcGhmw9roTJKcZitbUlSZhYvEUbt6g_-MLW53A1vGg"
     
-    static func randomImage() -> AnyPublisher<RandomImageResponse, GameError> {
+    static func generateRandomImage() -> AnyPublisher<RandomImageResponse, GameError> {
         let url = URL(string: "https://api.unsplash.com/photos/random/?client_id=\(accessToken)")!
         
         let config = URLSessionConfiguration.default

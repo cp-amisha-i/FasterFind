@@ -10,7 +10,7 @@ import UIKit
 import Combine
 
 enum ImageDownloader {
-    static func download(url: String) -> AnyPublisher<UIImage, GameError> {
+    static func downloadImage(url: String) -> AnyPublisher<UIImage, GameError> {
         guard let url = URL(string: url) else {
             return Fail(error: GameError.invalidURL)
                 .eraseToAnyPublisher()
