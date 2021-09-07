@@ -11,6 +11,7 @@
 		DA1922A726CD2C3900AF7E59 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1922A626CD2C3900AF7E59 /* SceneDelegate.swift */; };
 		DA1922AB26CD2C3A00AF7E59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA1922AA26CD2C3A00AF7E59 /* Assets.xcassets */; };
 		DA1922B126CD2C3A00AF7E59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA1922AF26CD2C3A00AF7E59 /* LaunchScreen.storyboard */; };
+		DAABC75926E6554F004E2538 /* GameError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAABC75826E6554F004E2538 /* GameError.swift */; };
 		DAC51A1E26D6621900997F45 /* UnsplashAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC51A1D26D6621900997F45 /* UnsplashAPI.swift */; };
 		DAC51A2126D6649400997F45 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC51A1F26D6649400997F45 /* GameViewController.swift */; };
 		DAC51A2226D6649400997F45 /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAC51A2026D6649400997F45 /* GameViewController.xib */; };
@@ -25,6 +26,7 @@
 		DA1922AA26CD2C3A00AF7E59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA1922B026CD2C3A00AF7E59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA1922B226CD2C3A00AF7E59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAABC75826E6554F004E2538 /* GameError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameError.swift; sourceTree = "<group>"; };
 		DAC51A1D26D6621900997F45 /* UnsplashAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashAPI.swift; sourceTree = "<group>"; };
 		DAC51A1F26D6649400997F45 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		DAC51A2026D6649400997F45 /* GameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameViewController.xib; sourceTree = "<group>"; };
@@ -64,16 +66,33 @@
 			children = (
 				DA1922A426CD2C3900AF7E59 /* AppDelegate.swift */,
 				DA1922A626CD2C3900AF7E59 /* SceneDelegate.swift */,
-				DAC51A1D26D6621900997F45 /* UnsplashAPI.swift */,
+				DAABC75A26E71F53004E2538 /* Game */,
+				DAABC75B26E71F7A004E2538 /* Network */,
 				DA1922AA26CD2C3A00AF7E59 /* Assets.xcassets */,
 				DA1922AF26CD2C3A00AF7E59 /* LaunchScreen.storyboard */,
 				DA1922B226CD2C3A00AF7E59 /* Info.plist */,
+			);
+			path = UnsplashGame;
+			sourceTree = "<group>";
+		};
+		DAABC75A26E71F53004E2538 /* Game */ = {
+			isa = PBXGroup;
+			children = (
 				DAC51A1F26D6649400997F45 /* GameViewController.swift */,
 				DAC51A2026D6649400997F45 /* GameViewController.xib */,
 				DAC51A2726D6760000997F45 /* GameState.swift */,
+				DAABC75826E6554F004E2538 /* GameError.swift */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		DAABC75B26E71F7A004E2538 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				DAC51A1D26D6621900997F45 /* UnsplashAPI.swift */,
 				DAC51A2926D67BE700997F45 /* ImageDownloader.swift */,
 			);
-			path = UnsplashGame;
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +167,7 @@
 			files = (
 				DAC51A2826D6760000997F45 /* GameState.swift in Sources */,
 				DAC51A2126D6649400997F45 /* GameViewController.swift in Sources */,
+				DAABC75926E6554F004E2538 /* GameError.swift in Sources */,
 				DAC51A2A26D67BE700997F45 /* ImageDownloader.swift in Sources */,
 				DAC51A1E26D6621900997F45 /* UnsplashAPI.swift in Sources */,
 				DA1922A526CD2C3900AF7E59 /* AppDelegate.swift in Sources */,
